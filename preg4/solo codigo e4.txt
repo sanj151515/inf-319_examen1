@@ -1,0 +1,9 @@
+numeros<-13
+numeros2<-c(rep(1:numeros,4));
+simbolos<-c("pica","corazon","trebol","diamante");
+simbolos2<-c(rep(simbolos,rep(numeros,4)));
+colores<-c("negro","rojo");
+colores2<-c(rep(colores,rep(numeros,2)));
+colores3<-c(rep(colores2,2));
+
+mi_df <- data.frame("colores" = colores3,"simbolos" = simbolos2,"numeros" = numeros2);

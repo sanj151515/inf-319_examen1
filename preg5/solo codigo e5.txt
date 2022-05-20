@@ -1,0 +1,3 @@
+my_species <- iris$Species
+my_iris <- iris[1:4]
+plot(my_iris, col = rainbow(3)[my_species])

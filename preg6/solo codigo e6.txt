@@ -1,0 +1,34 @@
+open System
+
+let suma a b = a + b
+let resta a b = a - b
+let multi a b = a * b
+let division a b = a / b
+
+[<EntryPoint>]
+let main argumentos = 
+while true do(
+Console.WriteLine("Calculadora")   
+Console.WriteLine("Introduzca dos numeros")
+let num1 = Console.ReadLine()
+let num2 = Console.ReadLine()
+let valor1 = Convert.ToInt32(num1)
+let valor2 = Convert.ToInt32(num2)
+Console.WriteLine("Operaciones matematicas")
+Console.WriteLine("1. Suma")
+Console.WriteLine("2. Resta")
+Console.WriteLine("3. Multiplicacion")
+Console.WriteLine("4. Division")
+let numOpe = Console.ReadLine()
+let valorOpe = Convert.ToInt32(numOpe)
+if (valorOpe=1) then (let res=suma valor1 valor2
+Console.WriteLine("La suma de sus dos numeros es: "+res.ToString()))
+if (valorOpe=2) then (let res=resta valor1 valor2
+Console.WriteLine("La resta de sus dos numeros es: "+res.ToString()))
+if (valorOpe=3) then (let res=multi valor1 valor2
+Console.WriteLine("La multiplicacion de sus dos numeros es: "+res.ToString()))
+if (valorOpe=4) then (let res=division valor1 valor2
+Console.WriteLine("La division de sus dos numeros es: "+res.ToString()))
+)
+let tecla = Console.ReadKey()
+0 // devolver un código de salida entero
